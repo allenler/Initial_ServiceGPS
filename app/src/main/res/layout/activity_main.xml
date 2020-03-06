@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/startBtn"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/coordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coordinates: "
+            android:textSize="30sp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
